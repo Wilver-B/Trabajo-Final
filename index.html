@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>One Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+      
+  <!-- Menú de navegación -->
+<nav class="navbar">
+  <div class="navbar-container">
+    <div class="logo">
+      <img src="Img/Logotipo_de_la_Ciudad_de_Buenos_Aires.svg" alt="Logo Ecoparque">
+    </div>
+
+    <!-- Checkbox oculto que controla el menú -->
+    <input type="checkbox" id="menu-toggle" />
+
+    <!-- Ícono hamburguesa -->
+    <label class="menu-icon" for="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <!-- Menú -->
+    <ul class="nav-links">
+      <li><a href="#que-es">¿Qué es?</a></li>
+      <li><a href="#patrimonio">Patrimonio</a></li>
+      <li><a href="#funciones">Funciones</a></li>
+      <li><a href="#actividades">Actividades</a></li>
+      <li><a href="#especies">Especies</a></li>
+      <li><a href="#visitas-guiadas">Visitas guiadas</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+  <!-- Cabezal -->
+
+  <header class="hero" id="que-es">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">Ecoparque</h1>
+      <div class="hero-box">
+        <h2>¿Qué es?</h2>
+        <p>El Ecoparque es un centro dedicado a la conservación de especies autóctonas en peligro de extinción y a la educación ambiental. Con 16,7 hectáreas abiertas al público, promueve el respeto por la naturaleza mediante experiencias educativas y recreativas. Trabaja para mitigar la crisis ambiental y recuperar los ecosistemas, en coordinación con todas las provincias del país. Actualmente, impulsa 15 programas de conservación y funciona también como centro de rescate de fauna silvestre, asistiendo animales heridos, huérfanos o víctimas del tráfico ilegal.</p>
+        <a href="#patrimonio" class="reservar-btn">Conocer más</a>
+      </div>
+    </div>
+  </header>
+  
+
+  <!-- Secciones -->
+
+  <section id="patrimonio" class="section patrimonio">
+    <div class="patrimonio-content">
+      <div class="patrimonio-texto">
+        <h2>Patrimonio</h2>
+        <p>
+            Del Jardín Zoológico al Ecoparque: la historia de una transformación.
+            El Ecoparque ocupa el predio del ex Jardín Zoológico de Buenos Aires, declarado Monumento Histórico Nacional. El predio contiene 42 edificios históricos, 27 obras de arte (esculturas y monumentos) y obras decorativas (fuentes, mástiles, ruinas bizantinas). Además de 9 puentes y 3 lagos: Azara, Darwin y Burmeister.
+            En el año 2017 arrancaron las obras de recuperación patrimonial bajo el compromiso de la puesta en valor de todo el predio, la creación de contenidos y nuevos usos para edificios históricos y garantizar la recuperación de espacios verdes y las elipses originales.
+            El proyecto actualiza, renueva y refuncionaliza las instalaciones y servicios, respetando su valor histórico y patrimonial, partiendo de los conceptos establecidos en la Ley Ecoparque 5752. El plan a corto, mediano y largo plazo es un parque cuyo patrimonio cultural y arquitectónico esté debidamente conservado, potenciando con ello la calidad del paseo y haciendo del predio un lugar único y atractivo por su historia.
+            
+        </p>
+        <a href="#modal-mapa" class="reservar-btn">Mapa del lugar</a>
+      </div>
+      <div class="patrimonio-imagen">
+        <img src="Img/historia.png" alt="Descripción del patrimonio">
+      </div>
+    </div>
+  </section>
+  
+  <div id="modal-mapa" class="modal">
+    <div class="modal-content">
+        <a href="javascript:void(0)" onclick="history.back()" class="modal-close">&times;</a>
+      <img src="Img/Mapa.jpg" alt="Mapa del lugar">
+    </div>
+  </div>
+
+  <section id="funciones" class="section funciones">
+    <div class="funciones-content">
+      <h2>Funciones</h2>
+      <div class="funciones-grid">
+        <div class="funcion-item">
+          <h3>Rescate y rehabilitación</h3>
+          <p>Trabajamos diariamente en la rehabilitación de fauna silvestre autóctona, brindando una segunda oportunidad a los animales que ingresan al CRFS. Recibimos un promedio de 400 animales al año. Del total de individuos ingresados, el 51,6% superó satisfactoriamente el proceso de rehabilitación y pudo ser liberado.</p>
+          <img src="Img/ryr.jpg" alt="Rescate">
+        </div>
+        <div class="funcion-item">
+          <h3>Programas de conservación</h3>
+          <p>Su objetivo principal es conservar las especies que presenten algún grado de amenaza con el propósito de asegurar la viabilidad a largo plazo de sus poblaciones. Actualmente hay 15 proyectos y programas de conservación </p>
+          <img src="Img/rr.jpg" alt="conservacion">
+        </div>
+        <div class="funcion-item">
+          <h3>Gestión Ambiental</h3>
+          <p>En el Ecoparque trabajamos todos los días para asegurar una buena gestión de los recursos como el agua y la energía-para transformar los residuos en recursos- y medir los parámetros ambientales a fin de asegurar el bienestar de animales y personas. Asimismo controlamos la calidad ambiental del parque para que tanto humanos como animales puedan disfrutar de un mayor bienestar.</p>
+          <img src="Img/ga.jpg" alt="Gestion">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="actividades" class="section actividades">
+    <div class="actividades-content">
+      <h2>¿Qué actividades ofrece?</h2>
+      <div class="actividades-grid">
+        <div class="actividad-bloque">
+          <h3>Exploratorio Del Río de la Plata</h3>
+          <div class="sub-actividad">
+            <h4>Plaza de agua</h4>
+          </div>
+          <div class="sub-actividad">
+            <h4>Animatrónicos</h4>
+            <p>Opera vos mismo los animales marinos robóticos.</p>
+          </div>
+          <div class="sub-actividad">
+            <h4>Ecoevolución</h4>
+            <p>Experiencia 4D. Acércate al tanque de agua y viajá por las tuberías de la ciudad.</p>
+          </div>
+        </div>
+        <div class="actividad-bloque">
+          <h3>CHE</h3>
+          <p>Un museo interactivo sobre la transformación del Ecoparque y la biodiversidad Argentina. Mapping, aplicaciones touch, juegos.</p>
+        </div>
+        <div class="actividad-bloque">
+          <h3>Paseo de flora</h3>
+          <p>Vivero, plantas nativas, acuáticas, compost y cartelería interactiva. Conocé todo sobre nuestras plantas nativas y cómo cuidarlas.</p>
+        </div>
+        <div class="actividad-bloque">
+          <h3>Observación de animales</h3>
+          <p>Mamíferos autóctonos, aves, plantas nativas, mariposas e insectos.</p>
+        </div>
+      </div>
+    </div>
+    
+    
+
+
+  </section>
+  
+
+  <section id="especies" class="section especies">
+  <div class="especies-content">
+    <h2>Especies del Ecoparque</h2>
+    <p class="intro">Estas son algunas de las especies autóctonas de la Argentina que podés observar en el Ecoparque.</p>
+
+    <div class="especie-bloque">
+      <div class="texto">
+        <h3>Mamíferos</h3>
+        <p>Descubrí los mamíferos autóctonos de la Argentina que podés conocer en el Ecoparque.</p>
+      </div>
+      <div class="galeria">
+        <img src="Img/Mamiferos/carpincho.jpg" alt="Mamífero 1">
+        <img src="Img/Mamiferos/guanaco.jpg" alt="Mamífero 2">
+        <img src="Img/Mamiferos/mara.jpg" alt="Mamífero 3">
+      </div>
+    </div>
+
+    <div class="especie-bloque">
+      <div class="texto">
+        <h3>Aves</h3>
+        <p>Conocé muchas de las aves nativas de nuestro país.</p>
+      </div>
+      <div class="galeria">
+        <img src="Img/Aves/flamenco austral.jpg" alt="Ave 1">
+        <img src="Img/Aves/picabuey.jpg" alt="Ave 2">
+        <img src="Img/Aves/Picaflor verde.jpg" alt="Ave 3">
+      </div>
+    </div>
+
+    <div class="especie-bloque">
+      <div class="texto">
+        <h3>Reptiles</h3>
+        <p>Identificá algunos de los reptiles autóctonos de la Argentina que podés conocer en el Ecoparque.</p>
+      </div>
+      <div class="galeria">
+        <img src="Img/Rectiles/lagarto overo.jpg" alt="Reptil 1">
+        <img src="Img/Rectiles/tortuga de laguna.jpg" alt="Reptil 2">
+      </div>
+    </div>
+
+    <div class="especie-bloque">
+      <div class="texto">
+        <h3>Mariposas</h3>
+        <p>Explorá el mundo de las mariposas que podés conocer en el Ecoparque.</p>
+      </div>
+      <div class="galeria">
+        <img src="Img/Mariposas/bataraza.jpg" alt="Mariposa 1">
+        <img src="Img/Mariposas/Cuatro ojos común.jpg" alt="Mariposa 2">
+        <img src="Img/Mariposas/Espejitos.jpg" alt="Mariposa 3">
+      </div>
+    </div>
+
+    <div class="especie-bloque">
+      <div class="texto">
+        <h3>Plantas</h3>
+        <p>Descubrí las plantas nativas que podés conocer en el Ecoparque.</p>
+      </div>
+      <div class="galeria">
+        <img src="Img/Plantas/barba de chivo.jpg" alt="Planta 1">
+        <img src="Img/Plantas/ceibo.jpg" alt="Planta 2">
+        <img src="Img/Plantas/vara dorada.jpg" alt="Planta 3">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="visitas-guiadas" class="section visitas-especiales">
+  <div class="visitas-container">
+    <h2>Visitas Guiadas Especiales</h2>
+    <p class="intro">
+      Sacá tu entrada y conocé las nuevas visitas especiales de Ecoparque.
+    </p>
+    <p class="descripcion">
+      Ecoparque ahora te ofrece visitas guiadas especiales donde podés conocer más de cerca las acciones de cría, rescate, rehabilitación, derivación, liberación y conservación de especies.
+    </p>
+    <p class="descripcion">
+      Te invitamos a conocerlas. Además los fondos recaudados nos permiten continuar rescatando, criando, rehabilitando y liberando especies amenazadas de toda la Argentina. <strong>¡Tu entrada ayuda a recuperar especies!</strong>
+    </p>
+
+    <div class="visita-lista">
+      <div class="visita-item">
+        <div class="visita-content">
+          <h3>Cuidado animal</h3>
+          <p>Sólo mayores de 6 años</p>
+          <button class="reservar-btn">Reservar</button>
+        </div>
+      </div>
+      <div class="visita-item">
+        <div class="visita-content">
+          <h3>Botánica</h3>
+          <p>&nbsp;</p>
+          <button class="reservar-btn">Reservar</button>
+        </div>
+      </div>
+      <div class="visita-item">
+        <div class="visita-content">
+          <h3>Hospital de Fauna Silvestre</h3>
+          <p>Sólo mayores de 12 años</p>
+          <button class="reservar-btn">Reservar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.9601148602146!2d-58.42114792339321!3d-34.57987575624101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb57835e44c59%3A0x9e74dd4b6cbb6d4!2sEcoparque%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1748825557950!5m2!1ses!2sar" width="1920" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-col">
+      <h4>Información</h4>
+      <p><strong>Días y horario:</strong><br> De martes a domingo y feriados de 11 a 18 hs.<br>Se cierra por lluvia.</p>
+      <p><strong>Ingresos:</strong><br> Plaza Italia, Av. Libertador y Av. Las Heras (Mundo GEA).</p>
+    </div>
+    <div class="footer-col">
+      <h4>Seguinos</h4>
+      <div class="social-links">
+        <a href="https://www.facebook.com/ecoparqueba/" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/ecoparqueba/" target="_blank">Instagram</a>
+      </div>
+    </div>
+  </div>
+</footer>
+  
+  
+
+</body>
+</html>
